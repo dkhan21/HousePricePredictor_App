@@ -1,4 +1,4 @@
-# My name is Daniyal Khan
+#Daniyal Khan HW1
 
 import numpy as n
 import matplotlib.pyplot as pl
