@@ -20,3 +20,6 @@ pl.xlabel('Amount of Bikers')
 pl.ylabel('Occurency')
 pl.title('Cyclists crossing the Brooklyn Bridge per Day')
 pl.show()
+
+![IMG-5147](https://user-images.githubusercontent.com/123338238/218350009-df439ca1-b79d-43d9-a717-bd4f0a0f30cc.jpg)
+![IMG-5149](https://user-images.githubusercontent.com/123338238/218350039-d9337978-b9ab-49c0-a8b9-39c2034ed6b7.jpg)
