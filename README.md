@@ -1,12 +1,10 @@
 Here is my code:
-python
 python HousePricing.py
 
 The model that I chose to use perform the SHAP interpretation of the house price prediction was the xgboost model. This is kown as Extreme Gradient boosting algorithm.
 For our case, it used a decision tree a checked the difference between the actual and predicted values. In additon to that, it also handled any missing values that occured in the data. The one other feature is does is prevent overfitting.
 
-Article that helped me understand what XGBoost is
-https://machinelearningmastery.com/gentle-introduction-xgboost-applied-machine-learning/
+Article that helped me understand what XGBoost is [XGBoost Article](https://machinelearningmastery.com/gentle-introduction-xgboost-applied-machine-learning/)
 
 For my shap values, I generated a summary plot consisting of all the features that are int and float data type and they are ordered by their shap values. There are multiples points on the graph and each point is basaically an instance in the data. There is also a vertical line included which shows the where the most important features are. The blue dots are known as low values and the red dots are known as high values. If you see purple then thats what is in the middle values. Also the horizontal axis shows the SHAP values for each feature.
 
