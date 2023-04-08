@@ -1,5 +1,29 @@
 Here is my code:
 
+import pandas as pand
+import xgboost
+import shap
+
+house = pand.read_csv(r'C:/Users/dkhan/Desktop/Python VSCode/train.csv')
+x =  house.drop('SalePrice', axis = 1).drop('Id', axis = 1)
+x = x.select_dtypes(include = ['float64', 'int64'])
+y = house["SalePrice"]
+
+# SHAP VALUES GRAPH of Summary Plot and Waterfall Plot
+mod = xgboost.XGBRFRegressor().fit(x, y)
+explainer = shap.Explainer( mod)
+sv = explainer(x);
+
+shap.summary_plot(sv, x)
+shap.plots.waterfall(sv[0])
+
+#SHAP DEPENDANCE PLOT with interaction values
+model = xgboost.train({"learning_rate": 0.01}, xgboost.DMatrix(x, label=y), 100)
+explain2 = shap.TreeExplainer(model)
+shapInterVals = explain2.shap_interaction_values(x)
+svdepend = explain2.shap_values(x)
+shap.dependence_plot('OverallQual', svdepend, x)
+
 
 The model that I chose to use perform the SHAP interpretation of the house price prediction was the xgboost model. This is kown as Extreme Gradient boosting algorithm.
 For our case, it used a decision tree a checked the difference between the actual and predicted values. In additon to that, it also handled any missing values that occured in the data. The one other feature is does is prevent overfitting.
