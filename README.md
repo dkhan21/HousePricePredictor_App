@@ -1,3 +1,4 @@
+
 The model that I chose to use to perform the SHAP interpretation of the house price prediction was the xgboost model. This is kown as Extreme Gradient boosting algorithm. For my case, it used a decision tree a checked the difference between the actual and predicted values. In additon to that, it also handled any missing values that occured in the data. The one other feature is does is prevent overfitting.
 
 Article that helped me understand what XGBoost is [XGBoost Article](https://machinelearningmastery.com/gentle-introduction-xgboost-applied-machine-learning/)
@@ -18,3 +19,4 @@ For shap interaction values, I created a dependence plot using the shap library.
 
 Dependance plot
 ![Screenshot 2023-04-08 112745](https://user-images.githubusercontent.com/123338238/230729730-b6b880c1-0c14-47a4-b886-92510fab88e7.png)
+
