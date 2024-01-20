@@ -1,10 +1,9 @@
-MILESTONE 3
-#Daniyal Khan Milestone-3
+
+#Daniyal Khan
 
 Visit the Hugging Space [House Price Prediction App](https://huggingface.co/spaces/dani101/milestone-3_Streamlit-App)
 
-
-MILESTONE 2 CALCULATIONS
+CALCULATIONS
 
 The model that I chose to use to perform the SHAP interpretation of the house price prediction was the xgboost model. This is kown as Extreme Gradient boosting algorithm. For my case, it used a decision tree a checked the difference between the actual and predicted values. In additon to that, it also handled any missing values that occured in the data. The one other feature is does is prevent overfitting.
 
