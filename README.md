@@ -4,7 +4,8 @@
 This Python script employs the Streamlit library to create an interactive web app for predicting house prices. It utilizes machine learning models, specifically the LightGBM regressor, trained on a dataset with 17 features. The user interface includes sliders for selecting various house features, and upon clicking the "Predict" button, the script calculates and displays the estimated house price. Additionally, it utilizes the SHAP (SHapley Additive exPlanations) library to provide feature importance explanations with bar and summary plots, enhancing interpretability. The resulting web app enables users to dynamically explore and understand the factors influencing house price predictions.
 #Daniyal Khan
 
-Visit the Hugging Space ![House Price Prediction App](https://huggingface.co/spaces/dani101/milestone-3_Streamlit-App)
+## Visit the Hugging Space 
+[![House Price Prediction App](Website.png)](https://huggingface.co/spaces/dani101/milestone-3_Streamlit-App)
 
 ## Language Model
 The model that I chose to use to perform the SHAP interpretation of the house price prediction was the xgboost model. This is known as Extreme Gradient Boosting algorithm. For my case, it used a decision tree a checked the difference between the actual and predicted values. In additon to that, it also handled any missing values that occured in the data. The one other feature is does is prevent overfitting. I learned this from [XGBoost Article](https://machinelearningmastery.com/gentle-introduction-xgboost-applied-machine-learning/)
